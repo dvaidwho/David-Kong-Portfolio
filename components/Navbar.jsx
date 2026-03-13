@@ -33,6 +33,7 @@ export default function Navbar() {
             width={44}
             height={44}
             className="rounded-full object-cover"
+            quality={100}
           />
           <div className="flex flex-col leading-tight">
             <span className="font-bold text-base dark:text-white">David Kong</span>
