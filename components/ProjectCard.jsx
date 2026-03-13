@@ -65,7 +65,7 @@ export default function ProjectCard({ title, description, image, tags, language,
             <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: languageColor }}></span>
             {language}
           </span>
-          <a href={githubUrl} className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/20 transition-colors text-xs">
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/20 transition-colors text-xs">
             View on GitHub
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
