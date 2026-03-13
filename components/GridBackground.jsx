@@ -1,3 +1,4 @@
+// Grid Pattern by Duy Le https://ui.duyle.dev/dynamic-grid-pattern
 "use client"
 import { useEffect, useRef } from "react"
 
