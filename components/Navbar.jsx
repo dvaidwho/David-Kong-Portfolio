@@ -30,11 +30,10 @@ export default function Navbar() {
           <Image
             src="/profile.png"
             alt="David Kong"
-            width={44}
-            height={44}
-            className="rounded-full object-cover"
+            width={88}
+            height={88}
+            className="rounded-full object-cover w-11 h-11"
             quality={100}
-            sizes="44px"
           />
           <div className="flex flex-col leading-tight">
             <span className="font-bold text-base dark:text-white">David Kong</span>
