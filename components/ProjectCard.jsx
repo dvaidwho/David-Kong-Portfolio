@@ -45,7 +45,7 @@ export default function ProjectCard({ title, description, image, tags, language,
   return (
     <div
       id={anchorId || undefined}
-      className={`flex flex-col rounded-xl border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-white/5 backdrop-blur-sm overflow-hidden transition-transform duration-300 hover:scale-[1.02]${anchorId ? " scroll-mt-24" : ""}`}
+      className={`flex flex-col rounded-xl border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-white/5 backdrop-blur-sm overflow-hidden transition-transform duration-300 hover:scale-[1.02] ${anchorId ? "scroll-mt-24" : ""}`}
     >
       <img src={image} alt={`${title} preview`} className="w-full h-40 sm:h-52 object-cover border-b border-gray-200 dark:border-gray-700" />
       <div className="flex flex-col flex-1 p-4 gap-3">
