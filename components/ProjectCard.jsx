@@ -6,7 +6,7 @@ export const projects = [
     tags: ["Chrome Extensions API", "Google Sheets API", "OAuth2"],
     language: "JavaScript",
     languageColor: "#f1e05a",
-    githubUrl: "#",
+    githubUrl: "https://github.com/dvaidwho/ApplyFlow",
     anchorId: null,
   },
   {
@@ -16,7 +16,7 @@ export const projects = [
     tags: ["Streamlit", "Pandas", "NumPy", "Plotly"],
     language: "Python",
     languageColor: "#3572A5",
-    githubUrl: "#",
+    githubUrl: "https://github.com/dvaidwho/CleanFi",
     anchorId: null,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     tags: ["OpenCV", "YOLOv8", "NumPy"],
     language: "Python",
     languageColor: "#3572A5",
-    githubUrl: "#",
+    githubUrl: "https://github.com/dvaidwho/SetLens",
     anchorId: "setlens",
   },
   {
