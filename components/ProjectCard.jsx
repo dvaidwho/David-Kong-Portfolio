@@ -30,18 +30,20 @@ export const projects = [
     anchorId: "setlens",
   },
   {
-    title: "GitHub",
-    description: "Check out more on my Github profile.",
-    image: "/github2.png",
-    tags: [],
-    language: "dvaidwho",
-    languageColor: "#C61532",
-    githubUrl: "https://github.com/dvaidwho",
+    title: "Coal2Core",
+    badge: "🥉 3rd place, Tufts NSDC Datathon 2026",
+    description: <>An interactive map visualizing ML-scored suitability rankings for 374 U.S. coal plant conversion sites, aiming to reduce carbon dependency for AI's growing energy demands.</>,
+    image: "/coal2core.png",
+    tags: ["Next.js", "Mapbox GL JS", "Tailwind"],
+    language: "TypeScript",
+    languageColor: "#3178c6",
+    githubUrl: "https://github.com/HarryJ12/Coal2Core",
+    siteUrl: "https://coal-to-core.vercel.app/",
     anchorId: null,
   },
 ]
 
-export default function ProjectCard({ title, description, image, tags, language, languageColor, githubUrl, anchorId }) {
+export default function ProjectCard({ title, badge, description, image, tags, language, languageColor, githubUrl, siteUrl, anchorId }) {
   return (
     <div
       id={anchorId || undefined}
@@ -49,28 +51,44 @@ export default function ProjectCard({ title, description, image, tags, language,
     >
       <img src={image} alt={`${title} preview`} className="w-full h-40 sm:h-52 object-cover border-b border-gray-200 dark:border-gray-700" />
       <div className="flex flex-col flex-1 p-4 gap-3">
-        <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-base">{title}</h3>
-        <p className="text-gray-500 dark:text-gray-400 text-sm">{description}</p>
-        {tags.length > 0 && (
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <span key={tag} className="px-2 py-0.5 rounded-md border border-gray-200 dark:border-gray-700 bg-white/60 dark:bg-white/5 text-gray-500 dark:text-gray-400 text-xs">
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
-        <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700 mt-auto">
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-base">{title}</h3>
+          {badge && (
+            <span className="px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-xs font-medium">{badge}</span>
+          )}
+        </div>
+        <div className="flex flex-col flex-1 gap-3">
+          <p className="text-gray-500 dark:text-gray-400 text-sm">{description}</p>
+          {tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <span key={tag} className="px-2 py-0.5 rounded-md border border-gray-200 dark:border-gray-700 bg-white/60 dark:bg-white/5 text-gray-500 dark:text-gray-400 text-xs">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+        <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700">
           <span className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
             <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: languageColor }}></span>
             {language}
           </span>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/20 transition-colors text-xs">
-            View on GitHub
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
+          <div className="flex items-center gap-2">
+            {siteUrl && (
+              <a href={siteUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/20 transition-colors text-xs">
+                Live Site
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            )}
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/20 transition-colors text-xs">
+              View on GitHub
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   )
 }
+
