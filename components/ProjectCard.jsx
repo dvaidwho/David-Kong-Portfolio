@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "ApplyFlow",
-    description: "A Chrome extension that detects and parses job postings directly from the page, extracting key fields and saving them to a users Google Sheet.",
+    title: "LogFlow",
+    description: "An AI-powered Chrome extension that scores your resume against any job posting, flags skill gaps and suspicious listings, and logs the application to a Google Sheet in a couple of clicks.",
     image: "/applyflow.png",
-    tags: ["Chrome Extensions API", "Google Sheets API", "OAuth2"],
+    tags: ["JavaScript", "Node.js,", "Claude API", "AWS Lambda", "OAuth2"],
     language: "JavaScript",
     languageColor: "#f1e05a",
     githubUrl: "https://github.com/dvaidwho/ApplyFlow",
