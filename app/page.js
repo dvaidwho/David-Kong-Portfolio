@@ -54,7 +54,7 @@ export default function Home() {
         <h2 className="text-3xl umass">About</h2>
         <div className="mt-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/40 dark:bg-white/5 backdrop-blur-sm p-6">
           <ul className="space-y-2 text-gray-500 dark:text-gray-400 list-disc list-inside">
-            <li>Sophomore at UMass Lowell, graduating <span className="text-gray-800 dark:text-gray-200 font-semibold">May 2028</span>.</li>
+            <li>Junior at UMass Lowell, graduating <span className="text-gray-800 dark:text-gray-200 font-semibold">May 2028</span>.</li>
             <li>Currently building <span className="text-gray-800 dark:text-gray-200 font-semibold"><a href="#setlens" className="underline underline-offset-2 hover:opacity-70 transition-opacity">SetLens</a></span>, a computer vision tool for volleyball analytics. 🏐</li>
             <li>Outside of coding, you'll find me playing volleyball or practicing my golf swing. ⛳</li>
           </ul>
