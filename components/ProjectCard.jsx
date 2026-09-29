@@ -6,7 +6,7 @@ export const projects = [
     tags: ["JavaScript", "Node.js,", "Claude API", "AWS Lambda", "OAuth2"],
     language: "JavaScript",
     languageColor: "#f1e05a",
-    githubUrl: "https://github.com/dvaidwho/ApplyFlow",
+    githubUrl: "https://github.com/dvaidwho/LogFlow-v1",
     anchorId: null,
   },
   {
